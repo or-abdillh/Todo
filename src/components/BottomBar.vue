@@ -13,7 +13,7 @@
   }
   
   .active {
-    @apply text-indigo-400 font-medium;
+    @apply text-indigo-600 font-medium;
   }
   
 </style>

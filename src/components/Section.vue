@@ -1,5 +1,5 @@
 <template>
-  <section :class="borderBottom ? 'border-b-2 border-gray-100' : ''" class="px-5 py-4 flex w-full justify-between">
+  <section class="px-5 py-4 flex w-full justify-between items-center">
     <slot name="start" />
     <slot name="end" />
   </section>
@@ -9,8 +9,7 @@
   
   defineProps({
     borderBottom : {
-      type: Boolean,
-      default: true
+      type: Boolean
     }
   })
   
