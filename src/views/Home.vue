@@ -13,6 +13,13 @@
       </template>
     </TopBar>
     
+    <!-- Contents -->
+    <section class="px-5 mt-8">
+      <h1 class="text-2xl font-medium mb-3">Today's Schedules</h1>
+      <!-- Alert -->
+      <Alert content="You have no sheduled sessions for today" button-text="new mission" icon="fa fa-plus" />
+    </section>
+    
     <!-- BottomBar -->
     <BottomBar/>
   </section>
@@ -21,5 +28,6 @@
   
   import BottomBar from '@/components/BottomBar.vue'
   import TopBar from '@/components/TopBar.vue'
+  import Alert from '@/components/Alert.vue'
   
 </script>
