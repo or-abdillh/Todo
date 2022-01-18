@@ -1,11 +1,11 @@
 <style scoped>
   
   .wrapper {
-    @apply bg-white fixed bottom-0 left-0 right-0 px-5 py-3;
+    @apply bg-white fixed bottom-0 left-0 right-0;
   }
   
   .bottom-bar {
-    @apply w-full flex justify-between; 
+    @apply w-full px-5 py-3 flex justify-between border-t-2 border-gray-100; 
   }
   
   .menu {
@@ -13,7 +13,7 @@
   }
   
   .active {
-    @apply text-blue-600 font-medium;
+    @apply text-indigo-400 font-medium;
   }
   
 </style>
