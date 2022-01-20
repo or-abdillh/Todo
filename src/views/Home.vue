@@ -35,8 +35,8 @@
     </Section>
     
     <div class="px-5 w-full mt-3">
-      <template v-for="student in 6" :key="student">
-        <List/>
+      <template v-for="(student, index) in Students" :key="index">
+        <List :img="student.img" :name="student.name" :progress="student.progress" :last-meet="student.lastMeet" v-on:tap="tap" />
       </template>
     </div>
     
@@ -46,9 +46,14 @@
 </template>
 <script setup>
   
+  import { useRouter } from 'vue-router'
   import BottomBar from '@/components/BottomBar.vue'
   import Section from '@/components/Section.vue'
   import Alert from '@/components/Alert.vue'
   import List from '@/components/List.vue'
+  import Students from '@/Students.js'
   
+  const router = useRouter()
+  
+  const tap = () => router.push({ name: 'detail' })
 </script>
