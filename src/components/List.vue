@@ -1,5 +1,21 @@
+<style scoped>
+  @keyframes swipe {
+    from {
+      transform: translateX(-100%) scale(.75);
+      opacity: .85;
+    } to {
+      transform: translateX(0) scale(1);
+      opacity: 1;
+    }
+  }
+  
+  .swipe {
+    animation: swipe .35s ease-in-out forwards;
+  }
+</style>
+
 <template>
-  <section @click="tap" class="flex justify-between items-center mb-5">
+  <section @click="tap" class="swipe flex justify-between items-center mb-5">
     <!-- Profile -->
     <div class="w-2/12">
       <img :src="img" class="rounded-full" width="55" />
@@ -21,7 +37,7 @@
       </div>
       <!-- Action -->
       <div>
-        <i class="text-xl fa fa-chevron-right"></i>
+        <i class="active:scale-75 duration-300 text-xl fa fa-chevron-right"></i>
       </div>
     </div>
   </section>
@@ -34,7 +50,7 @@
   const tap = () => {
     setTimeout(() => {
       emits('tap')
-    }, 300)
+    }, 350)
   }
   
   //Props

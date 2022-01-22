@@ -3,10 +3,10 @@
     <!-- Header -->
     <Section>
       <template v-slot:start>
-        <i @click="back" class="text-2xl fa fa-arrow-left"></i>
+        <i @click="back" class="active:scale-75 hover:opacity-75 duration-300 text-2xl fa fa-arrow-left"></i>
       </template>
       <template v-slot:end>
-        <i class="text-2xl fas fa-ellipsis-v"></i>
+        <i class="text-2xl active:scale-75 hover:opacity-75 duration-300 fas fa-ellipsis-v"></i>
       </template>
     </Section>
     
@@ -33,7 +33,7 @@
       </template>
       <template v-slot:end>
         <div>
-          <button class="text-sm bg-indigo-200 p-2 rounded-xl text-indigo-800" type="button">
+          <button class="text-sm bg-indigo-200 focus:bg-indigo-100 foucs:ring-1 focus:ring-indigo duration-300 p-2 rounded-xl text-indigo-800" type="button">
             <i class="fa fa-plus"></i>
             New sessions
           </button>
@@ -55,8 +55,8 @@
           <span class="flex items-center gap-2">
             <h1 class="text-xl font-medium text-gray-700">Progress</h1>
             <span>
-              <i class="p-1 mr-1 text-xs rounded-full text-green-700 bg-green-200  fa fa-chart-line"></i>
-              <small class="text-green-700">97%</small>
+              <i class="p-1 mr-1 text-sm rounded-full text-green-600 fa fa-chart-line"></i>
+              <small class="text-sm text-green-600">97%</small>
             </span>
           </span>
           <p class="text-xs text-gray-700">Mentoring since : July 2021</p>

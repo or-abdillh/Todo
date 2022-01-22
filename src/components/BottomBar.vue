@@ -5,11 +5,11 @@
   }
   
   .bottom-bar {
-    @apply w-full px-5 py-3 flex justify-between border-t-2 border-gray-100; 
+    @apply w-full mx-auto md:w-6/12 lg:w-4/12 xl:w-3/12 px-5 py-3 flex justify-between border-t-2 border-gray-100; 
   }
   
   .menu {
-    @apply duration-300 flex flex-col items-center text-gray-400;
+    @apply active:scale-125 duration-300 flex flex-col items-center text-gray-400;
   }
   
   .active {
